@@ -6,6 +6,7 @@ from .serializers import BookingSerializer, MenuSerializer
 from rest_framework.decorators import api_view
 from rest_framework import generics
 from rest_framework import viewsets, permissions
+from rest_framework.permissions import IsAuthenticated
 
 # Create your views here.
 def index(request):
